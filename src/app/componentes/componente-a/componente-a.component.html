@@ -1,1 +1,9 @@
-<p>componente-a works!</p>
+<h2>Heroes</h2>
+
+
+<input id="newHero">
+<button (click)="addHero()">Add Hero</button>
+<h3 *ngFor="let hero of heroes">
+    <b>{{ hero.NAME }}</b>
+    <button (click)="deleteHero(hero.ID)">Delete Hero</button>
+</h3>

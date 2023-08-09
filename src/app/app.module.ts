@@ -16,6 +16,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { ComponenteAComponent } from './componentes/componente-a/componente-a.component';
 import { ComponenteBComponent } from './componentes/componente-b/componente-b.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ComponenteBComponent } from './componentes/componente-b/componente-b.co
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
